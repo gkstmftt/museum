@@ -1,0 +1,114 @@
+#mainVisual {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+#mainVisual .mainVisual_inner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#mainVisual img {
+}
+#mainVisual .left {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-weight: 500;
+    padding-top: 563px;
+    padding-left: 125px;
+}
+#mainVisual .left p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#mainVisual .left strong {
+    font-size: 25px;
+    display: block;
+    line-height: 1.2;
+}
+#mainVisual .left strong span {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 30px;
+}
+#mainVisual .left .more {
+    border: 1px solid white;
+    width: 250px;
+    height: 45px;
+    border-radius: 100px;
+    padding-left: 30px;
+    line-height: 45px;
+    font-size: 22px;
+    background-image: url(../images/icon-right.png);
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+}
+#mainVisual .right .slider {
+    position: absolute;
+    left: 805px;
+    bottom: 120px;
+    display: flex;
+}
+#mainVisual .right .slider > img {
+    margin-right: 40px;
+    width: 500px;
+    height: 217px;
+}
+#mainVisual .pag {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 800px;
+}
+#mainVisual .pag .dot {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+#mainVisual .pag .dot.on {
+    color: white;
+}
+
+#mainVisual .pag::after {
+    content: '';
+    width: 740px;
+    height: 4px;
+    background: white;
+    left: 185px;
+    bottom: 30%;
+    transform: translateY(-30%);
+    position: absolute;
+}
+#mainVisual .num {
+    position: absolute;
+    font-size: 30px;
+    right: 50px;
+    bottom: 40px;
+    color: white;
+}
+/* //visual */
+.main {
+}
+.main #content {
+}
+.main #content .con {
+}
+.main #content .con .content {
+}
+.main #content .con .content .con1 {
+}
+.main #content .con .content .con1 .inner {
+}
+.main #content .con .content .con1 p {
+}
+.main #content .con .content .con1 p img {
+}
+.main #content .con .content .con1 h2 {
+}
+.main #content .con .content .con1 strong {
+}
+.main #content .con .content .con1;

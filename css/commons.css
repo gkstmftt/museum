@@ -1,0 +1,51 @@
+#wrap,
+#container,
+#content,
+#footer {
+    width: 100%;
+}
+.inner {
+    margin: auto;
+    box-sizing: border-box;
+}
+#header {
+    width: 100%;
+}
+#header .inner {
+    width: 1400px;
+    height: 90px;
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#header .nav {
+    display: flex;
+    position: absolute;
+    left: 460px;
+}
+#header .nav .gnb {
+    display: flex;
+}
+#header .nav .gnb li {
+    margin-right: 50px;
+}
+#header .nav .gnb li a {
+    font-size: 16px;
+}
+#header .nav .gnb li ul {
+    display: none;
+}
+#header .util {
+    position: absolute;
+    right: 0;
+}
+#header .util ul {
+    display: flex;
+}
+#header .util ul li {
+    margin-right: 10px;
+}
+#header .util ul li:last-of-type {
+    margin-right: 0;
+}
