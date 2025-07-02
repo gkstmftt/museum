@@ -49,3 +49,111 @@
 #header .util ul li:last-of-type {
     margin-right: 0;
 }
+#footer {
+    height: 415px;
+    background: #202020;
+    margin-top: 80px;
+    position: relative;
+}
+#footer .inner {
+}
+#footer .social_icon {
+    display: flex;
+    justify-content: end;
+    padding: 30px 45px 0 0;
+    gap: 10px;
+}
+#footer .social_icon > li {
+    transition: transform 0.3s ease;
+}
+#footer .social_icon li:hover {
+    transform: translateY(-5px);
+}
+#footer .social_icon li {
+}
+#footer .social_icon li a {
+}
+#footer .social_icon li a img {
+    width: 30px;
+}
+#footer .footer_logo {
+    margin-left: 50px;
+    position: relative;
+}
+#footer .footer_logo img:nth-of-type(1) {
+    position: absolute;
+    left: 115px;
+    top: -5px;
+}
+#footer .addr {
+    color: #fff;
+    font-size: 14 px;
+    margin: 30px 0 0 50px;
+    font-weight: 300;
+    position: relative;
+}
+#footer .addr span:nth-of-type(2) {
+    margin-right: 30px;
+}
+#footer .addr span:nth-of-type(2)::after {
+    content: '/';
+    position: absolute;
+    left: 110px;
+}
+#footer .footer_links {
+    display: flex;
+    margin: 100px 0 0 50px;
+    gap: 30px;
+    position: absolute;
+    bottom: 40px;
+}
+#footer .footer_links li {
+}
+#footer .footer_links li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+#footer .footer_links li a:hover {
+    font-weight: 500;
+}
+#footer .footer_links li:nth-of-type(1) a {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 7px;
+}
+#footer .family {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+#footer .family .title {
+    color: #fff;
+    /* position: relative; */
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#footer .family ul {
+    position: absolute;
+    width: 170px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    right: 0;
+    text-align: center;
+    background: #000;
+    padding: 30px 10px 30px 10px;
+    display: none;
+}
+#footer .family ul li a {
+    color: #fff;
+    font-weight: 300;
+}
+#footer .family ul li a:hover {
+    /* color: red; */
+}

@@ -141,7 +141,6 @@
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
-                    <div class="dot"></div>
                 </div>
                 <div class="num">01</div>
             </div>
@@ -151,7 +150,9 @@
             <section id="content">
                 <div class="con content con1">
                     <div class="inner">
-                        <p><img src="./images/icon_car.png" alt="오시는길" />오시는길 바로가기</p>
+                        <p class="road">
+                            <img src="./images/icon_car.png" alt="오시는길" />오시는길 바로가기
+                        </p>
                         <h2>이달의 전시</h2>
                         <strong
                             >오늘의 관람시간 10:00 ~ 18:00 (입장은 오후 5시 20분까지
@@ -174,26 +175,351 @@
                                 <img src="./images/con1_05.png" alt="크리스탈가야" />
                             </div>
                         </div>
-                        <p>
-                            <button class="next">
-                                <img src="./images/icon_arrow-right.png" alt="화살표오른쪽" />
+                        <span class="more">예약하기</span>
+                        <p class="btn-wrap">
+                            <button class="btn prev">
+                                <img src="./images/icons_arrow-left.png" alt="" />
                             </button>
-                            <button class="prev">
-                                <img src="./images/icons_arrow-left.png" alt="화살표왼쪽" />
+                            <button class="btn next">
+                                <img src="./images/icon_arrow-right.png" alt="" />
                             </button>
                         </p>
                     </div>
                 </div>
+                <!-- //con1 -->
+
                 <div class="con content con2">
-                    <div class="inner"></div>
+                    <div class="inner">
+                        <div class="events-title">
+                            <h3>진행 중인 행사</h3>
+                            <span>6</span>
+                            <div class="date">
+                                <p>
+                                    <img src="./images/icon_date.png" alt="달력" />View All Events
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="events-grid">
+                            <ul>
+                                <li></li>
+                                <li>
+                                    <span>공연별상이</span>
+                                    <h4>박물관 속 무용</h4>
+                                    <p>2025-04-07 ~ 2025-11-07</p>
+                                </li>
+                                <li>
+                                    <span>국립전주박물관 야외</span>
+                                    <h4>국립전주박물관: 갬블러크루</h4>
+                                    <p>2025-06-07 ~ 2025-06-07</p>
+                                </li>
+                                <li>
+                                    <span>국립중앙박물관 극장</span>
+                                    <h4>공룡이 살아있다</h4>
+                                    <p>2024-01-09 ~ 2024-02-25</p>
+                                </li>
+                                <li>
+                                    <span>국립중앙박물관 극장</span>
+                                    <h4>드래곤하이 스페셜</h4>
+                                    <p>2024-01-09 ~ 2024-02-25</p>
+                                </li>
+                                <li>
+                                    <span>국립중앙박물관 극장</span>
+                                    <h4>시시풍류: 그 시절 우리의 풍류</h4>
+                                    <p>2025-06-26 ~ 2025-06-27</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <!-- //con2 -->
                 <div class="con content con3">
-                    <div class="inner"></div>
+                    <div class="inner">
+                        <div class="video-wrapper">
+                            <video autoplay muted loop playsinline class="bg-video">
+                                <source src="./videos/vr.mp4" type="video/mp4" />
+                                브라우저가 video 태그를 지원하지 않습니다.
+                            </video>
+                            <div class="overlay"></div>
+                            <span>언제 어디서나 실감나게 온라인 실감콘텐츠</span>
+                            <strong>강산에 펼친 풍요로운 세상, </strong>
+                            <strong>강산무진도</strong>
+                        </div>
+
+                        <p class="btn-vr">
+                            <button>VR 체험하기</button>
+                        </p>
+                    </div>
                 </div>
+                <!-- //con3 영상 -->
                 <div class="con content con4">
-                    <div class="inner"></div>
+                    <div class="inner">
+                        <div class="notice-menu">
+                            <h5>
+                                <span>국립중앙박물관 소식</span>
+                                알립니다
+                            </h5>
+                            <ul class="menu-list">
+                                <li><a href="#" class="on">알림</a></li>
+                                <li><a href="#">고시/공고</a></li>
+                                <li><a href="#">채용안내</a></li>
+                                <li><a href="#">보도자료</a></li>
+                            </ul>
+                        </div>
+                        <div class="notice-list on">
+                            <ul>
+                                <li>
+                                    <img src="./images/icon_pluse.jpg" alt="" />
+                                    <div class="day">
+                                        <strong>13</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>소식</p>
+                                        <em
+                                            >상설전시관 분청사기·백자실(304·305호) 임시 휴실
+                                            안내(6.18.수)</em
+                                        >
+                                        <!-- <img src="./images/icon_arrow-right-line.png" alt="" /> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="day">
+                                        <strong>16</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>소식</p>
+                                        <em
+                                            >상설전시관 분청사기·백자실 심화전 '달항아리가 만들어진
+                                            곳, 금사...</em
+                                        >
+                                        <!-- <img src="./images/icon_arrow-right-line.png" alt="" /> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="day">
+                                        <strong>23</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>소식</p>
+                                        <em>2025년 6월 도서관 휴관일 안내</em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="notice-list">
+                            <ul>
+                                <li>
+                                    <img src="./images/icon_pluse.jpg" alt="" />
+                                    <div class="day">
+                                        <strong>04</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>공고</p>
+                                        <em>한국영상자료원 원장 공개모집 공고</em>
+                                        <!-- <img src="./images/icon_arrow-right-line.png" alt="" /> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="day">
+                                        <strong>10</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>공고</p>
+                                        <em
+                                            >2025년 국립중앙박물관 전문경력관 공무원 경력경쟁채용
+                                            공고</em
+                                        >
+                                        <!-- <img src="./images/icon_arrow-right-line.png" alt="" /> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="day">
+                                        <strong>25</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>공고</p>
+                                        <em
+                                            >2025년 국립중앙박물관 전문경력관 공무원 경력경쟁채용
+                                            서류합격자 발표...
+                                        </em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="notice-list">
+                            <ul>
+                                <li>
+                                    <img src="./images/icon_pluse.jpg" alt="" />
+                                    <div class="day">
+                                        <strong>01</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>채용</p>
+                                        <em
+                                            >국립중앙박물관 세계문화부 기간제근로자(학예보조) 채용
+                                            공고</em
+                                        >
+                                        <!-- <img src="./images/icon_arrow-right-line.png" alt="" /> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="day">
+                                        <strong>15</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>채용</p>
+                                        <em
+                                            >국립중앙박물관 디지털박물관과 기간제근로자 채용시험
+                                            서류전형 합격자 및 면접시험 공고...</em
+                                        >
+                                        <!-- <img src="./images/icon_arrow-right-line.png" alt="" /> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="day">
+                                        <strong>20</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>채용</p>
+                                        <em>(사)국립중앙박물관회 사무국 직원 채용 공고</em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="notice-list">
+                            <ul>
+                                <li>
+                                    <img src="./images/icon_pluse.jpg" alt="" />
+                                    <div class="day">
+                                        <strong>04</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>보도자료</p>
+                                        <em
+                                            >[국립중앙박물관] 한류 열풍 타고…국립중앙박물관 방문객
+                                            급증</em
+                                        >
+                                        <!-- <img src="./images/icon_arrow-right-line.png" alt="" /> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="day">
+                                        <strong>10</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>보도자료</p>
+                                        <em
+                                            >[국립중앙박물관] 큐레이터와의 대화 7월 프로그램
+                                            소개</em
+                                        >
+                                        <!-- <img src="./images/icon_arrow-right-line.png" alt="" /> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="day">
+                                        <strong>25</strong>
+                                        <span>2025.06</span>
+                                    </div>
+                                    <div class="info">
+                                        <p>보도 자료</p>
+                                        <em
+                                            >[국립광주박물관]국립광주박물관, '제36회 어린이 문화유산
+                                            그리기 대회' 개...
+                                        </em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="icon">
+                            <img src="./images/icon_arrow-right-line.png" alt="" />
+                            <img src="./images/icon_arrow-right-line.png" alt="" />
+                            <img src="./images/icon_arrow-right-line.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <!-- //con4  -->
+                <div class="con content con5">
+                    <ul class="site-list">
+                        <li>
+                            <img src="./images/site01.png" alt="어린이박물관" />
+                        </li>
+                        <li><img src="./images/site02.png" alt="e뮤지엄" /></li>
+                        <li><img src="./images/site03.png" alt="MUDS" /></li>
+                        <li><img src="./images/site04.png" alt="" /></li>
+                        <li><img src="./images/site05.png" alt="외규장각의궤" /></li>
+                        <!-- <li><img src="./images/site06.png" alt="외규장각의궤" /></li> -->
+                    </ul>
+                    <p class="btn">
+                        <button class="prev">
+                            <img src="./images/icon-bigarrow-left.png" alt="왼쪽화살표" />
+                        </button>
+                        <button class="next">
+                            <img src="./images/icon-bigarrow-right.png" alt="오른쪽화살표" />
+                        </button>
+                    </p>
                 </div>
             </section>
         </main>
+        <footer id="footer">
+            <div class="inner">
+                <ul class="social_icon">
+                    <li>
+                        <a href="#"><img src="./images/icon_blog.png" alt="블로그" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/icon_youtube.png" alt="유튜브" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/icon_Instagram.png" alt="인스타그램" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/icon_Facebook.png" alt="페이스북" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/icon_h.png" alt="고객센터" /></a>
+                    </li>
+                </ul>
+                <div class="footer_logo">
+                    <img src="./images/logo_m.png" alt="로고" />
+                    <img src="./images/logo_title.png" alt="국립중앙박물관" />
+                </div>
+                <address class="addr">
+                    <span>서울시 용산구 서빙고로 137(용산동6가 168-6)</span>
+                    <br />
+                    <span>02-2077-9000</span>
+                    <span>© National Museum of Korea.</span>
+                </address>
+
+                <ul class="footer_links">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보처리기기 운영 관리 규정</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">전자민원</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li><a href="#">공공데이터개방</a></li>
+                </ul>
+
+                <div class="family">
+                    <p class="title">관련사이트 바로가기 +</p>
+                    <ul>
+                        <li><a href="#">국립박물관 문화재단</a></li>
+                        <li><a href="#">국립중앙박물관회</a></li>
+                        <li><a href="#">사단법인 한국박물관협회</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/main.js"></script>
     </body>
 </html>
