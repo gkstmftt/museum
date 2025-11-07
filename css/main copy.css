@@ -1,0 +1,544 @@
+#mainVisual {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+#mainVisual .mainVisual_inner {
+    /* width: 100%; */
+    position: relative;
+    overflow: hidden;
+}
+#mainVisual img {
+}
+#mainVisual .left {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-weight: 500;
+    padding-top: 563px;
+    padding-left: 125px;
+}
+#mainVisual .left p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#mainVisual .left strong {
+    font-size: 25px;
+    display: block;
+    line-height: 1.6;
+}
+#mainVisual .left strong span {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 50px;
+}
+#mainVisual .left .more {
+    border: 1px solid white;
+    width: 250px;
+    height: 45px;
+    border-radius: 100px;
+    padding-left: 30px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: 300;
+    background-image: url(../images/icon-right.png);
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    cursor: pointer;
+    transition: background-position 0.3s ease, font-weight 0.3s ease;
+}
+#mainVisual .left .more:hover {
+    background-position: 90% 50%;
+    font-weight: 500;
+}
+#mainVisual .right .slider {
+    position: absolute;
+    left: 805px;
+    bottom: 120px;
+    display: flex;
+}
+#mainVisual .right .slider > img {
+    margin-right: 40px;
+    width: 500px;
+    height: 217px;
+}
+#mainVisual .pag {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 805px;
+}
+#mainVisual .pag .dot {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin-right: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#mainVisual .pag .dot.on {
+    background: white;
+}
+
+#mainVisual .pag::after {
+    content: '';
+    width: 740px;
+    height: 1px;
+    background: white;
+    left: 185px;
+    bottom: 40%;
+    transform: translateY(-30%);
+    position: absolute;
+}
+#mainVisual .num {
+    position: absolute;
+    font-size: 30px;
+    right: 105px;
+    bottom: 40px;
+    color: white;
+}
+/* //visual */
+.main {
+}
+.main #content {
+}
+.main #content .con {
+}
+.main #content {
+}
+.main #content .con1 {
+    position: relative;
+}
+.main #content .con1 .inner {
+    text-align: center;
+    position: relative;
+}
+.main #content .con1 .road {
+    /* position: absolute;
+    right: 70px;
+    top: 30px; */
+    line-height: 15px;
+    font-size: 22px;
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.main #content .con1 .road:hover {
+    color: red;
+}
+.main #content .con1 .road img {
+    margin-right: 15px;
+}
+.main #content .con1 h2 {
+    font-size: 40px;
+    padding-top: 200px;
+    margin-bottom: 10px;
+}
+
+.main #content .con1 .track {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.main #content .con1 .more {
+    border: 1px solid #000;
+    width: 250px;
+    height: 45px;
+    border-radius: 100px;
+    line-height: 45px;
+    font-size: 16px;
+    padding-left: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -120px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.main #content .con1 .more:hover {
+    background: #000;
+    color: #fff;
+}
+.main #content .con1 .btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+.main #content .con1 .prev {
+    left: 100px;
+    top: 70%;
+}
+.main #content .con1 .next {
+    right: 100px;
+    top: 70%;
+}
+/* //////////////////////////////////////////////////////////////con1 */
+
+.main #content .con2 {
+    margin-top: 350px;
+}
+.main #content .con2 .inner {
+    display: flex;
+    flex-direction: column;
+}
+.main #content .con2 .events-title {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.main #content .con2 .events-title h3 {
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    left: 261px;
+    bottom: -45px;
+}
+.main #content .con2 .events-title > span {
+    font-size: 25px;
+    display: block;
+    position: absolute;
+    left: 500px;
+    top: -25px;
+}
+.main #content .con2 .events-title .date {
+    margin-left: 10px;
+    font-size: 16px;
+    position: absolute;
+    bottom: -420px;
+    left: 261px;
+    cursor: pointer;
+}
+.main #content .con2 .events-title .date:hover {
+    color: red;
+}
+.main #content .con2 .date img {
+    margin-right: 10px;
+    padding-top: 2px;
+}
+.main #content .con2 .events-grid {
+}
+.main #content .con2 .events-grid > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.main #content .con2 .events-grid > ul li {
+    width: 350px;
+    height: 440px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    position: relative;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+.main #content .con2 .events-grid > ul li:nth-of-type(1) {
+    border-left: none;
+    margin-left: 963px;
+    background-image: url(../images/con2_01.jpg);
+}
+.main #content .con2 .events-grid > ul li:nth-of-type(1),
+.main #content .con2 .events-grid > ul li:nth-of-type(2) {
+    border-bottom: none;
+}
+.main #content .con2 .events-grid > ul li:nth-of-type(3) {
+    margin-left: 261px;
+    border-left: 0;
+}
+
+.main #content .con2 .events-grid > ul li:nth-of-type(2):hover {
+    background-image: url(../images/con2_02.jpg);
+}
+.main #content .con2 .events-grid > ul li:nth-of-type(3):hover {
+    background-image: url(../images/con2_03.jpg);
+}
+.main #content .con2 .events-grid > ul li:nth-of-type(4):hover {
+    background-image: url(../images/con2_04.jpg);
+}
+.main #content .con2 .events-grid > ul li:nth-of-type(5):hover {
+    background-image: url(../images/con2_05.jpg);
+}
+.main #content .con2 .events-grid > ul li:nth-of-type(6):hover {
+    background-image: url(../images/con2_06.jpg);
+}
+.main #content .con2 .events-grid > ul li:hover span,
+.main #content .con2 .events-grid > ul li:hover h4,
+.main #content .con2 .events-grid > ul li:hover p {
+    display: none;
+}
+.main #content .con2 .events-grid > ul li span {
+    font-size: 14px;
+    display: block;
+    padding: 20px 0 10px 40px;
+}
+.main #content .con2 .events-grid > ul li span::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    left: 27px;
+    top: 30px;
+    background: #000;
+    border-radius: 100%;
+
+    position: absolute;
+}
+.main #content .con2 .events-grid > ul li h4 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 25px;
+}
+.main #content .con2 .events-grid > ul li p {
+    font-size: 16px;
+    padding-left: 25px;
+    margin-top: 310px;
+}
+/* ///////////////////////////////con2 */
+.main #content .con3 {
+    margin-top: 200px;
+    width: 100%;
+}
+.main #content .con3 .inner {
+    /* width: 100%; */
+    color: white;
+    position: relative;
+}
+
+.main #content .con3 .inner .video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 원하는 크기로 설정 */
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 비율 유지하며 채우기 */
+    filter: contrast(1.1) brightness(1.1) saturate(1.2);
+}
+.video-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 검정색 반투명 마스크 */
+    pointer-events: none; /* 클릭 방지 */
+}
+.main #content .con3 .inner .video-wrapper span {
+    position: absolute;
+    font-size: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 240px;
+    display: block;
+    /* color: red; */
+}
+.main #content .con3 .inner .video-wrapper strong {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 325px;
+    display: block;
+    /* color: red; */
+}
+.main #content .con3 .inner .video-wrapper > strong:nth-of-type(2) {
+    top: 405px;
+}
+.main #content .con3 > .btn-vr {
+}
+.main #content .con3 .btn-vr > button {
+    border: 1px solid white;
+    width: 250px;
+    height: 45px;
+    border-radius: 100px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: 300;
+    /* background-image: url(../images/icon-right.png); */
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    position: absolute;
+    bottom: 242px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: white;
+    transition: 0.3s ease;
+}
+.main #content .con3 .btn-vr > button:hover {
+    border: 1px solid #fff;
+    color: white;
+    background: #000;
+}
+/* ///////////////////////////con3 */
+.main #content .con4 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.main #content .con4 .inner {
+    display: flex;
+    justify-content: space-between;
+}
+.main #content .con4 .notice-menu {
+    margin-left: 280px;
+}
+.main #content .con4 .notice-menu h5 {
+    font-size: 40px;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+}
+.main #content .con4 .notice-menu span {
+    font-size: 14px;
+    display: inline-block;
+    padding: 4px;
+}
+.main #content .con4 .notice-menu .menu-list {
+    margin-top: 80px;
+}
+.main #content .con4 .notice-menu .menu-list li {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.main #content .con4 .notice-menu .menu-list li a.on {
+    color: red;
+}
+
+.main #content .con4 .notice-list {
+    display: none;
+}
+.main #content .con4 .notice-list.on {
+    display: block;
+}
+.main #content .con4 .notice-list ul {
+    padding-right: 470px;
+    margin-top: 45px;
+}
+
+.main #content .con4 .notice-list ul li {
+    display: flex;
+    margin-bottom: 60px;
+    position: relative;
+    /* background-image: url(../images/icon_arrow-right-line.png); */
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+.main #content .con4 .notice-list ul li:last-of-type {
+    margin-bottom: 0;
+}
+.main #content .con4 .notice-list ul li img {
+    position: absolute;
+    right: -120px;
+    top: -100px;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+.main #content .con4 .notice-list ul li .day {
+    flex-direction: column;
+    display: flex;
+}
+.main #content .con4 .notice-list ul li .day strong {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+}
+.main #content .con4 .notice-list ul li .day span {
+    font-size: 14px;
+}
+.main #content .con4 .notice-list ul li .info {
+    margin-left: 70px;
+    position: relative;
+    cursor: pointer;
+}
+.main #content .con4 .notice-list ul li .info > img {
+    position: absolute;
+    right: -80px;
+    top: 50%;
+}
+.main #content .con4 .notice-list ul li .info p {
+    /* padding-top: 16px; */
+    font-weight: 500;
+}
+.main #content .con4 .notice-list ul li .info em {
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    width: 530px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main #content .con4 .notice-list ul li .info em:hover {
+    color: red;
+}
+.main #content .con4 .icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 400px;
+    padding-right: 20px;
+}
+.main #content .con4 .icon img {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.main #content .con4 .icon img:hover {
+    transform: rotate(-45deg);
+}
+.main #content .con4 .icon > img {
+    margin-top: 100px;
+}
+.main #content .con4 .icon > img:nth-of-type(1) {
+    margin-top: 75px;
+}
+/* ///////////////////////////4 */
+.main #content .con5 {
+    position: relative;
+    /* border: 1px solid #ff0000; */
+    height: 70px;
+}
+
+.main #content .con5 .site-list {
+    /* padding-top: 150px; */
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    width: 1400px;
+    /* border: 1px solid #000; */
+    overflow: hidden;
+    display: flex;
+    /* gap: 140px; */
+    justify-content: space-between;
+}
+.main #content .con5 .site-list img {
+    cursor: pointer;
+}
+.main #content .con5 > .btn {
+    position: relative;
+}
+.main #content .con5 > .btn .prev,
+.main #content .con5 > .btn .next {
+    background: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+.main #content .con5 > .btn .prev {
+    left: 30px;
+    bottom: -80px;
+}
+.main #content .con5 > .btn .next {
+    right: 30px;
+    bottom: -80px;
+}
+/* ///con5 */
