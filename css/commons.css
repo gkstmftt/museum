@@ -10,45 +10,112 @@
 }
 #header {
     width: 100%;
+    position: relative;
+    z-index: 1000;
 }
+
 #header .inner {
     width: 1400px;
     height: 90px;
-    /* background: pink; */
     display: flex;
     align-items: center;
     position: relative;
 }
+
 #header .nav {
     display: flex;
     position: absolute;
     left: 460px;
 }
+
 #header .nav .gnb {
     display: flex;
+    position: relative;
 }
-#header .nav .gnb li {
-    margin-right: 50px;
+
+#header .nav .gnb > li {
+    margin-right: 40px;
+    position: relative;
 }
-#header .nav .gnb li a {
+
+#header .nav .gnb > li > a {
     font-size: 16px;
+    display: block;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
 }
-#header .nav .gnb li ul {
-    display: none;
+
+/* 서브메뉴 기본 스타일 - 숨김 */
+#header .nav .gnb > li > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
 }
+
+/* 호버시 서브메뉴 표시 */
+#header .nav .gnb > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#header .nav .gnb > li > ul > li {
+    display: block;
+    white-space: nowrap;
+    border-bottom: 1px solid #eee;
+}
+
+#header .nav .gnb > li > ul > li:last-child {
+    border-bottom: none;
+}
+
+#header .nav .gnb > li > ul > li > a {
+    display: block;
+    padding: 12px 20px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+#header .nav .gnb > li > ul > li > a:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+
 #header .util {
     position: absolute;
     right: 0;
 }
+
 #header .util ul {
     display: flex;
 }
+
 #header .util ul li {
     margin-right: 10px;
+    position: relative;
 }
+
 #header .util ul li:last-of-type {
     margin-right: 0;
 }
+
 #footer {
     height: 415px;
     background: #202020;
@@ -87,7 +154,7 @@
 }
 #footer .addr {
     color: #fff;
-    font-size: 14 px;
+    font-size: 14px;
     margin: 30px 0 0 50px;
     font-weight: 300;
     position: relative;
@@ -130,30 +197,53 @@
 }
 #footer .family .title {
     color: #fff;
-    /* position: relative; */
+    position: relative;
     font-size: 18px;
     border-bottom: 1px solid #fff;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 #footer .family ul {
     position: absolute;
-    width: 170px;
-    bottom: 50px;
+    width: 100%;
+    height: 0;
+    bottom: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     right: 0;
-    text-align: center;
+    /* text-align: center; */
     background: #000;
-    padding: 30px 10px 30px 10px;
-    display: none;
+
+    /* padding: 30px 10px 30px 10px; */
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+#footer .family ul li {
+    border: 1px solid #000;
+    margin-top: 10px;
+    padding-left: 10px;
+    position: relative;
 }
 #footer .family ul li a {
     color: #fff;
     font-weight: 300;
 }
-#footer .family ul li a:hover {
+#footer .family ul li:hover a::after {
     /* color: red; */
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    border-radius: 50%;
+}
+#footer .family ul li:hover a {
+    padding-left: 10px;
+    transition: 0.3s linear;
 }
